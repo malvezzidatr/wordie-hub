@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Hello world!123"
+    "title": "Master Languages Faster with Smart, Adaptive Flashcards",
+    "subtitle": "Boost your vocabulary, grammar, and conversation skills with our intelligent flashcard system – personalized learning designed to help language learners succeed quickly and effectively.",
+    "heroButtonText": "Start Learning",
+    "cardTitleActiveDeck": "Active Decks",
+    "cardTitleDayStreak": "Day Streak",
+    "cardTitleAccuracy": "Accuracy"
   }
 }

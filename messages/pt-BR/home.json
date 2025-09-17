@@ -1,5 +1,10 @@
 {
   "HomePage": {
-    "title": "Ola mundo!"
+    "title": "Mestre idiomas mais rápido com flashcards inteligentes e adaptáveis",
+    "subtitle": "Aumente seu vocabulário, gramática e habilidades de conversação com nosso sistema de flashcard inteligente - aprendizado personalizado projetado para ajudar os alunos a terem sucesso de maneira rápida e eficaz.",
+    "heroButtonText": "Comece a aprender",
+    "cardTitleActiveDeck": "Decks ativos",
+    "cardTitleDayStreak": "Traço de dia",
+    "cardTitleAccuracy": "Precisão"
   }
 }
