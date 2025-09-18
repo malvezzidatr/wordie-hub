@@ -5,6 +5,11 @@
     "heroButtonText": "Comece a aprender",
     "cardTitleActiveDeck": "Decks ativos",
     "cardTitleDayStreak": "Traço de dia",
-    "cardTitleAccuracy": "Precisão"
+    "cardTitleAccuracy": "Precisão",
+    "flashcardExampleTitle": "Hola",
+    "flashcardExampleLanguage": "Espanhol",
+    "flashcardExampleClickToReveal": "Clique para revelar a tradução",
+    "flashcardExampleBackTitle": "Hello",
+    "flashcardExampleBackLanguage": "Inglês"
   }
 }

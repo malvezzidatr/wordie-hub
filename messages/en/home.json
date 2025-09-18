@@ -5,6 +5,11 @@
     "heroButtonText": "Start Learning",
     "cardTitleActiveDeck": "Active Decks",
     "cardTitleDayStreak": "Day Streak",
-    "cardTitleAccuracy": "Accuracy"
+    "cardTitleAccuracy": "Accuracy",
+    "flashcardExampleTitle": "Hola",
+    "flashcardExampleLanguage": "Spanish",
+    "flashcardExampleClickToReveal": "Click to reveal translation",
+    "flashcardExampleBackTitle": "Hello",
+    "flashcardExampleBackLanguage": "English"
   }
 }
