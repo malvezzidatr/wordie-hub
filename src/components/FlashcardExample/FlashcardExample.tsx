@@ -16,14 +16,14 @@ export const FlashcardExample = ({
   backLanguage,
 }: FlashcardExample) => {
   return (
-    <label className="w-[480px] h-[360px] [perspective:1000px] cursor-pointer block">
-      {/* Checkbox escondido controla o flip */}
-      <input type="checkbox" className="peer hidden" />
+    <label key={title + language} className="w-[480px] h-[360px] [perspective:1000px] cursor-pointer block">
+      <input defaultChecked={false} type="checkbox" className="peer hidden" />
 
-      <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)]">
+      <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] peer-checked:[transform:rotateY(180deg)] shadow-lg rounded-lg">
 
         {/* Frente */}
-        <div className="absolute w-full h-full backface-hidden">
+          <div className="absolute w-full h-full" style={{ backfaceVisibility: 'hidden', willChange: 'transform' }}>
+
           <div className="card w-[480px] shadow-md hover:shadow-lg transition-shadow h-full">
             <div className="card-body items-center flex justify-center">
               <div className="w-16 h-16 bg-neutral-100 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -39,8 +39,15 @@ export const FlashcardExample = ({
         </div>
 
         {/* Verso */}
-        <div className="absolute w-full h-full [transform:rotateY(180deg)] backface-hidden">
-          <div className="card w-[480px] shadow-md hover:shadow-lg transition-shadow h-full">
+          <div
+            className="absolute w-full h-full"
+            style={{
+              transform: 'rotateY(180deg)',
+              backfaceVisibility: 'hidden',
+              willChange: 'transform'
+            }}
+          >
+          <div className="card w-[480px] shadow-md hover:shadow-xl transition-shadow h-full">
             <div className="card-body items-center flex">
               <div className="w-16 h-16 bg-neutral-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <i className="text-neutral-600 text-xl">
