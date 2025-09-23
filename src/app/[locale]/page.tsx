@@ -59,9 +59,9 @@ export default function Home() {
       />
 
       <div className="w-full mt-24 flex items-center justify-between gap-8 mb-14">
-        <Card icon={FaLayerGroup} title={t('cardTitleActiveDeck')} countText="24" />
-        <Card icon={FaFire} title={t('cardTitleDayStreak')} countText="47" />
-        <Card icon={FaChartLine} title={t('cardTitleAccuracy')} countText="89%" />
+        <Card iconColor="text-blue-500" backgroundIcon="bg-gradient-to-tl from-blue-500 to-blue-100" icon={FaLayerGroup} title={t('cardTitleActiveDeck')} countText="24" />
+        <Card iconColor="text-orange-500" backgroundIcon="bg-gradient-to-tl from-orange-500 to-orange-100" icon={FaFire} title={t('cardTitleDayStreak')} countText="47" />
+        <Card iconColor="text-green-500" backgroundIcon="bg-gradient-to-tl from-green-500 to-green-100" icon={FaChartLine} title={t('cardTitleAccuracy')} countText="89%" />
       </div>
       <div className="mb-10">
         <p className="text-3xl text-neutral-900 mb-4 text-center">Interactive Learning Experience</p>
