@@ -73,10 +73,10 @@ export default function Home() {
         <button className="btn btn-neutral rounded-md">Novo deck</button>
       </div>
       <div className="flex items-center gap-4 justify-between flex-wrap">
-        <Deck />
-        <Deck />
-        <Deck />
-        <Deck />
+        <Deck description="description 1" howManyCard="24" percentage="30" title="title 1" />
+        <Deck description="description 2" howManyCard="12" percentage="42" title="title 2"/>
+        <Deck description="description 3" howManyCard="80" percentage="61" title="title 3"/>
+        <Deck description="description 4" howManyCard="34" percentage="5" title="title 4"/>
       </div>
 
       <div className="flex flex-col items-center justify-center mt-16">
