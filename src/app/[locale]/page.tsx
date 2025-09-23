@@ -1,11 +1,12 @@
 "use client";
 
+import { BeneficitCard } from "@/components/BeneficitCard/BeneficitCard";
 import { Card } from "@/components/Card/Card";
 import { CardStack } from "@/components/CardStack/CardStack";
 import { Deck } from "@/components/Deck/Deck";
 import { HeroSection } from "@/components/HeroSection/HeroSection";
 import { useTranslations } from "next-intl";
-import { FaPlay, FaLayerGroup, FaFire, FaChartLine, FaCheck, FaComment } from "react-icons/fa6";
+import { FaPlay, FaLayerGroup, FaFire, FaChartLine, FaCheck, FaComment, FaBrain } from "react-icons/fa6";
 
 export default function Home() {
   const t = useTranslations('HomePage');
@@ -49,7 +50,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="bg-white min-h-screen px-12 items-center justify-center text-black">
+    <div className="bg-white min-h-screen px-32 items-center justify-center text-black">
       <HeroSection
         title={t('title')}
         subtitle={t('subtitle')}
@@ -76,6 +77,20 @@ export default function Home() {
         <Deck />
         <Deck />
         <Deck />
+      </div>
+
+      <div className="flex flex-col items-center justify-center mt-16">
+        <div className="flex flex-col mb-12 items-center">
+          <h2 className="text-3xl text-neutral-900 mb-4">Why choose Wordie?</h2>
+          <p className="text-lg text-neutral-600">Designed specifically for language learning success</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+          <BeneficitCard title="Smart Algorithm" description="Adaptive learning that focuses on your weak points" icon={FaBrain} />
+          <BeneficitCard title="Smart Algorithm" description="Adaptive learning that focuses on your weak points" icon={FaBrain} />
+          <BeneficitCard title="Smart Algorithm" description="Adaptive learning that focuses on your weak points" icon={FaBrain} />
+          <BeneficitCard title="Smart Algorithm" description="Adaptive learning that focuses on your weak points" icon={FaBrain} />
+
+        </div>
       </div>
     </div>
   );
